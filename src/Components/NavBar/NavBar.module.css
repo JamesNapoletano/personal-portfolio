@@ -4,7 +4,7 @@
     border-radius: 23px 23px 6px 6px;
     box-shadow: 10px 20px 70px rgba(0, 0, 0, 0.5);
     margin: 25px;
-    background: linear-gradient(10deg, #0099ff 0%, #ff0000 100%);
+    background: linear-gradient(10deg, #0099ff 0%, #0059ff 100%);
     width: fit-content;
     height: fit-content;
 }

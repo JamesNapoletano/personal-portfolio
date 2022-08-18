@@ -1,0 +1,69 @@
+.navStroke {
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    margin: 25px;
+    background: linear-gradient(10deg, #0099ff 0%, #ff0000 100%);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 23px 0px;
+}
+
+.navBase {
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    background: linear-gradient(0deg, rgba(109, 109, 109, 0.6) 0%, rgb(163, 163, 163, 0.6) 100%);
+    margin: 2px;
+    padding: 10px 5px;
+    width: 1024px;
+    height: 61px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px 0px;
+}
+
+.navButtonInit {
+    box-sizing: border-box;
+    min-height: 1em;
+    width: 100%;
+    margin: 5px;
+    padding: 10px 10px;
+    background: transparent;
+    border: 1px solid rgb(0, 0, 0, 0.4);
+    border-radius: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navButtonUp {
+    box-sizing: border-box;
+    min-height: 1em;
+    width: 100%;
+    margin: 5px;
+    padding: 10px 10px;
+    background: linear-gradient(0deg, transparent 0%, rgb(163, 163, 163, 0.6) 100%);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navButtonDown {
+    box-sizing: border-box;
+    min-height: 1em;
+    width: 100%;
+    margin: 5px;
+    padding: 10px 10px;
+    background: linear-gradient(0deg, transparent 0%, rgba(51, 51, 51, 0.6) 100%);
+    border: 1px solid rgb(0, 0, 0, 0.6);
+    border-radius: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+

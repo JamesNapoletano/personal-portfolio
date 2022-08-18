@@ -116,13 +116,13 @@ const NavBar = () => {
     return (
 
         <div className={styles.navStroke}>
-            <div className={styles.navBase}>
+            <nav className={styles.navBase}>
                 {homeBtn}
                 {bioBtn}
                 {projBtn}
                 {probBtn}
                 {contBtn}
-            </div>
+            </nav>
         </div>
 
     )

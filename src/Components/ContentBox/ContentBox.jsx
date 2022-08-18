@@ -9,13 +9,9 @@ const ContentBox = () => {
                 <div className={styles.innerContent}>
 
 
-                    Theres
+                    Theres Stuff
                     <br/>
-                    Stuff
-                    <br/>
-                    in
-                    <br/>
-                    Here
+                    in Here
 
 
                     </div>

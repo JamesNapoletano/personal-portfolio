@@ -9,13 +9,13 @@ const Footer = () => {
                 <div className={styles.currentPage}>
                     personal-portfolio/home
                 </div>
-                <div className={styles.links}>
+                <nav className={styles.links}>
                     <a>Home</a>
                     <a>Bio</a>
                     <a>Projects</a>
                     <a>Solved Problems</a>
                     <a>Contact</a>
-                </div>
+                </nav>
             </div>
         </div>
 

@@ -9,22 +9,8 @@ const NavBar = () => {
                 <div
                     id='home'
                     className={styles.navButtonDown}
-                    onMouseEnter={() => {
-                        if (document.getElementById('home').className === `${styles.navButtonInit}`) {
-
-                            document.getElementById('home').className = `${styles.navButtonUp}`
-                        }
-                    }
-                    }
-                    onMouseLeave={() => {
-                        if (document.getElementById('home').className === `${styles.navButtonUp}`) {
-
-                            document.getElementById('home').className = `${styles.navButtonInit}`
-                        }
-                    }
-                    }
                     onClick={() => {
-                        if (document.getElementById('home').className === `${styles.navButtonUp}`) {
+                        if (document.getElementById('home').className === `${styles.navButtonInit}`) {
 
                             document.getElementById('home').className = `${styles.navButtonDown}`
 
@@ -44,22 +30,8 @@ const NavBar = () => {
                 <div
                     id='bio'
                     className={styles.navButtonInit}
-                    onMouseEnter={() => {
-                        if (document.getElementById('bio').className === `${styles.navButtonInit}`) {
-
-                            document.getElementById('bio').className = `${styles.navButtonUp}`
-                        }
-                    }
-                    }
-                    onMouseLeave={() => {
-                        if (document.getElementById('bio').className === `${styles.navButtonUp}`) {
-
-                            document.getElementById('bio').className = `${styles.navButtonInit}`
-                        }
-                    }
-                    }
                     onClick={() => {
-                        if (document.getElementById('bio').className === `${styles.navButtonUp}`) {
+                        if (document.getElementById('bio').className === `${styles.navButtonInit}`) {
 
                             document.getElementById('home').className = `${styles.navButtonInit}`
 
@@ -78,22 +50,8 @@ const NavBar = () => {
                 <div
                     id='projects'
                     className={styles.navButtonInit}
-                    onMouseEnter={() => {
-                        if (document.getElementById('projects').className === `${styles.navButtonInit}`) {
-
-                            document.getElementById('projects').className = `${styles.navButtonUp}`
-                        }
-                    }
-                    }
-                    onMouseLeave={() => {
-                        if (document.getElementById('projects').className === `${styles.navButtonUp}`) {
-
-                            document.getElementById('projects').className = `${styles.navButtonInit}`
-                        }
-                    }
-                    }
                     onClick={() => {
-                        if (document.getElementById('projects').className === `${styles.navButtonUp}`) {
+                        if (document.getElementById('projects').className === `${styles.navButtonInit}`) {
 
                             document.getElementById('home').className = `${styles.navButtonInit}`
 
@@ -112,22 +70,8 @@ const NavBar = () => {
                 <div
                     id='problems'
                     className={styles.navButtonInit}
-                    onMouseEnter={() => {
-                        if (document.getElementById('problems').className === `${styles.navButtonInit}`) {
-
-                            document.getElementById('problems').className = `${styles.navButtonUp}`
-                        }
-                    }
-                    }
-                    onMouseLeave={() => {
-                        if (document.getElementById('problems').className === `${styles.navButtonUp}`) {
-
-                            document.getElementById('problems').className = `${styles.navButtonInit}`
-                        }
-                    }
-                    }
                     onClick={() => {
-                        if (document.getElementById('problems').className === `${styles.navButtonUp}`) {
+                        if (document.getElementById('problems').className === `${styles.navButtonInit}`) {
 
                             document.getElementById('home').className = `${styles.navButtonInit}`
 
@@ -146,22 +90,8 @@ const NavBar = () => {
                 <div
                     id='contact'
                     className={styles.navButtonInit}
-                    onMouseEnter={() => {
-                        if (document.getElementById('contact').className === `${styles.navButtonInit}`) {
-
-                            document.getElementById('contact').className = `${styles.navButtonUp}`
-                        }
-                    }
-                    }
-                    onMouseLeave={() => {
-                        if (document.getElementById('contact').className === `${styles.navButtonUp}`) {
-
-                            document.getElementById('contact').className = `${styles.navButtonInit}`
-                        }
-                    }
-                    }
                     onClick={() => {
-                        if (document.getElementById('contact').className === `${styles.navButtonUp}`) {
+                        if (document.getElementById('contact').className === `${styles.navButtonInit}`) {
 
                             document.getElementById('home').className = `${styles.navButtonInit}`
 

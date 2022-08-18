@@ -6,7 +6,19 @@ const ContentBox = () => {
 
         <div className={styles.contentStroke}>
             <div className={styles.contentBase}>
-                <p>Theres Stuff in Here</p>
+                <div className={styles.innerContent}>
+
+
+                    Theres
+                    <br/>
+                    Stuff
+                    <br/>
+                    in
+                    <br/>
+                    Here
+
+
+                    </div>
             </div>
         </div>
 

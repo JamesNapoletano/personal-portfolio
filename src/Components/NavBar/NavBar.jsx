@@ -1,117 +1,47 @@
-import styles from './NavBar.module.css'
+import styles from './NavBar.module.css';
+import { Link, useLocation } from 'react-router-dom';
 
 const NavBar = () => {
-
+    const { pathname } = useLocation();
     const homeBtn = (
-        <div
-            id='home'
-            className={styles.navButtonDown}
-            onClick={() => {
-                if (document.getElementById('home').className === `${styles.navButtonInit}`) {
-
-                    document.getElementById('home').className = `${styles.navButtonDown}`
-
-                    document.getElementById('bio').className = `${styles.navButtonInit}`
-
-                    document.getElementById('projects').className = `${styles.navButtonInit}`
-
-                    document.getElementById('problems').className = `${styles.navButtonInit}`
-
-                    document.getElementById('contact').className = `${styles.navButtonInit}`
-
-                }
-            }}
+        <Link
+            to="/"
+            className={pathname === '/' ? styles.navButtonDown : styles.navButtonInit}
         >
             Home
-        </div>
+        </Link>
     )
     const bioBtn = (
-        <div
-            id='bio'
-            className={styles.navButtonInit}
-            onClick={() => {
-                if (document.getElementById('bio').className === `${styles.navButtonInit}`) {
-
-                    document.getElementById('home').className = `${styles.navButtonInit}`
-
-                    document.getElementById('bio').className = `${styles.navButtonDown}`
-
-                    document.getElementById('projects').className = `${styles.navButtonInit}`
-
-                    document.getElementById('problems').className = `${styles.navButtonInit}`
-
-                    document.getElementById('contact').className = `${styles.navButtonInit}`
-                }
-            }}
+        <Link
+            to="bio"
+            className={pathname === '/bio' ? styles.navButtonDown : styles.navButtonInit}
         >
             Bio
-        </div>
+        </Link>
     )
     const projBtn = (
-        <div
-            id='projects'
-            className={styles.navButtonInit}
-            onClick={() => {
-                if (document.getElementById('projects').className === `${styles.navButtonInit}`) {
-
-                    document.getElementById('home').className = `${styles.navButtonInit}`
-
-                    document.getElementById('bio').className = `${styles.navButtonInit}`
-
-                    document.getElementById('projects').className = `${styles.navButtonDown}`
-
-                    document.getElementById('problems').className = `${styles.navButtonInit}`
-
-                    document.getElementById('contact').className = `${styles.navButtonInit}`
-                }
-            }}
+        <Link
+            to="projects"
+            className={pathname === '/projects' ? styles.navButtonDown : styles.navButtonInit}
         >
             Projects
-        </div>
+        </Link>
     )
     const probBtn = (
-        <div
-            id='problems'
-            className={styles.navButtonInit}
-            onClick={() => {
-                if (document.getElementById('problems').className === `${styles.navButtonInit}`) {
-
-                    document.getElementById('home').className = `${styles.navButtonInit}`
-
-                    document.getElementById('bio').className = `${styles.navButtonInit}`
-
-                    document.getElementById('projects').className = `${styles.navButtonInit}`
-
-                    document.getElementById('problems').className = `${styles.navButtonDown}`
-
-                    document.getElementById('contact').className = `${styles.navButtonInit}`
-                }
-            }}
+        <Link
+            to="problems"
+            className={pathname === '/problems' ? styles.navButtonDown : styles.navButtonInit}
         >
             Solved Problems
-        </div>
+        </Link>
     )
     const contBtn = (
-        <div
-            id='contact'
-            className={styles.navButtonInit}
-            onClick={() => {
-                if (document.getElementById('contact').className === `${styles.navButtonInit}`) {
-
-                    document.getElementById('home').className = `${styles.navButtonInit}`
-
-                    document.getElementById('bio').className = `${styles.navButtonInit}`
-
-                    document.getElementById('projects').className = `${styles.navButtonInit}`
-
-                    document.getElementById('problems').className = `${styles.navButtonInit}`
-
-                    document.getElementById('contact').className = `${styles.navButtonDown}`
-                }
-            }}
+        <Link
+            to="contact"
+            className={pathname === '/contact' ? styles.navButtonDown : styles.navButtonInit}
         >
-            Contact Information
-        </div>
+            Contact
+        </Link>
     )
     return (
 

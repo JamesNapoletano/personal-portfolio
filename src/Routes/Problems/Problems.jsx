@@ -3,16 +3,47 @@ import { Link, Outlet, useLocation } from "react-router-dom";
 
 
 export default function Problems() {
+
     const { pathname } = useLocation();
+
+    const fizzBuzz = (
+        <Link
+            to={pathname !== '/personal-portfolio/problems/fizzbuzz' ? 'fizzbuzz' : ''}
+        >
+            FizzBuzz
+        </Link>
+    )
+    const wordPalindrome = (
+        <Link
+            to={pathname !== '/personal-portfolio/problems/wordpalindrome' ? 'wordpalindrome' : ''}
+        >
+            Word Palindrome
+        </Link>
+    )
+    const numberPalindrome = (
+        <Link
+            to={pathname !== '/personal-portfolio/problems/numberpalindrome' ? 'numberpalindrome' : ''}
+        >
+            Number Palindrome
+        </Link>
+    )
+    const twoSum = (
+        <Link
+            to={pathname !== '/personal-portfolio/problems/twosum' ? 'twosum' : ''}
+        >
+            Two Sum
+        </Link>
+    )
+
     return (
         <div>
             <nav>
-                <Link to='fizzbuzz'>FizzBuzz</Link>
-                <Link to='wordpalindrome'>Word Palindrome</Link>
-                <Link to='numberpalindrome'>Number Palindrome</Link>
-                <Link to='twosum'>Two Sum</Link>
+                {fizzBuzz}
+                {wordPalindrome}
+                {numberPalindrome}
+                {twoSum}
             </nav>
-            {pathname === '/personal-portfolio/problems' ? 'Solved Problems' : <Outlet />}
+            {pathname === '/personal-portfolio/problems' ? <>Solved Problems</> : <Outlet />}
         </div>
     )
 }

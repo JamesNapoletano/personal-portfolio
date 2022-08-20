@@ -10,9 +10,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import NavBar from './Components/NavBar/NavBar';
 import Footer from './Components/Footer/Footer';
-import Bio from './Routes/Bio';
+import Bio from './Routes/Bio/Bio';
 import Projects from './Routes/Projects';
-import Problems from './Routes/Problems';
+import Problems from './Routes/Problems/Problems';
+import FizzBuzz from './Routes/Problems/FizzBuzz/FizzBuzz';
+import WordPalindrome from './Routes/Problems/WordPalindrome/WordPalindrome';
+import NumberPalindrome from './Routes/Problems/NumberPalindrome/NumberPalindrome';
+import TwoSum from './Routes/Problems/TwoSum/TwoSum';
 import Contact from './Routes/Contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,7 +32,12 @@ root.render(
                 <Route path='personal-portfolio/' element={<App />} />
                 <Route path='personal-portfolio/bio' element={<Bio />} />
                 <Route path='personal-portfolio/projects' element={<Projects />} />
-                <Route path='personal-portfolio/problems' element={<Problems />} />
+                <Route path='personal-portfolio/problems' element={<Problems />}>
+                  <Route path='fizzbuzz' element={<FizzBuzz />} />
+                  <Route path='wordpalindrome' element={<WordPalindrome />} />
+                  <Route path='numberpalindrome' element={<NumberPalindrome />} />
+                  <Route path='twosum' element={<TwoSum />} />
+                </Route>
                 <Route path='personal-portfolio/contact' element={<Contact />} />
               </Routes>
             </div>

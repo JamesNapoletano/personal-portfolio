@@ -25,7 +25,7 @@ root.render(
           <div className='contentBase'>
             <div className='innerContent'>
               <Routes>
-                <Route path='personal-portfolio' element={<App />} />
+                <Route path='personal-portfolio/' element={<App />} />
                 <Route path='personal-portfolio/bio' element={<Bio />} />
                 <Route path='personal-portfolio/projects' element={<Projects />} />
                 <Route path='personal-portfolio/problems' element={<Problems />} />

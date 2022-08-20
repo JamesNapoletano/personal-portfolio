@@ -12,7 +12,7 @@ const Footer = () => {
                     {pathname}
                 </div>
                 <nav className={styles.links}>
-                    <Link to='personal-portfolio'>Home</Link>
+                    <Link to='personal-portfolio/'>Home</Link>
                     <Link to='personal-portfolio/bio'>Bio</Link>
                     <Link to='personal-portfolio/projects'>Projects</Link>
                     <Link to='personal-portfolio/problems'>Solved Problems</Link>

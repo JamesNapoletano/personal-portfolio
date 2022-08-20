@@ -18,18 +18,18 @@ import Contact from './Routes/Contact';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter> 
+    <BrowserRouter>
       <div className='flex'>
         <NavBar />
         <div className='contentStroke'>
           <div className='contentBase'>
             <div className='innerContent'>
               <Routes>
-                <Route path='/' element={<App />} />
-                <Route path='/bio' element={<Bio />} />
-                <Route path='/projects' element={<Projects />} />
-                <Route path='/problems' element={<Problems />} />
-                <Route path='/contact' element={<Contact />} />
+                <Route path='personal-portfolio/home' element={<App />} />
+                <Route path='personal-portfolio/bio' element={<Bio />} />
+                <Route path='personal-portfolio/projects' element={<Projects />} />
+                <Route path='personal-portfolio/problems' element={<Problems />} />
+                <Route path='personal-portfolio/contact' element={<Contact />} />
               </Routes>
             </div>
           </div>

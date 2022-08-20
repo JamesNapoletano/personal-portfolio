@@ -5,40 +5,42 @@ const NavBar = () => {
     const { pathname } = useLocation();
     const homeBtn = (
         <Link
-            to="/"
-            className={pathname === '/' ? styles.navButtonDown : styles.navButtonInit}
+            to="personal-portfolio/home"
+            className={
+                pathname === '/personal-portfolio/home' ? styles.navButtonDown : styles.navButtonInit
+            }
         >
             Home
         </Link>
     )
     const bioBtn = (
         <Link
-            to="bio"
-            className={pathname === '/bio' ? styles.navButtonDown : styles.navButtonInit}
+            to="personal-portfolio/bio"
+            className={pathname === '/personal-portfolio/bio' ? styles.navButtonDown : styles.navButtonInit}
         >
             Bio
         </Link>
     )
     const projBtn = (
         <Link
-            to="projects"
-            className={pathname === '/projects' ? styles.navButtonDown : styles.navButtonInit}
+            to="personal-portfolio/projects"
+            className={pathname === '/personal-portfolio/projects' ? styles.navButtonDown : styles.navButtonInit}
         >
             Projects
         </Link>
     )
     const probBtn = (
         <Link
-            to="problems"
-            className={pathname === '/problems' ? styles.navButtonDown : styles.navButtonInit}
+            to="personal-portfolio/problems"
+            className={pathname === '/personal-portfolio/problems' ? styles.navButtonDown : styles.navButtonInit}
         >
             Solved Problems
         </Link>
     )
     const contBtn = (
         <Link
-            to="contact"
-            className={pathname === '/contact' ? styles.navButtonDown : styles.navButtonInit}
+            to="personal-portfolio/contact"
+            className={pathname === '/personal-portfolio/contact' ? styles.navButtonDown : styles.navButtonInit}
         >
             Contact
         </Link>

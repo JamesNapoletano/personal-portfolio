@@ -5,9 +5,9 @@ const NavBar = () => {
     const { pathname } = useLocation();
     const homeBtn = (
         <Link
-            to="personal-portfolio/home"
+            to="personal-portfolio"
             className={
-                pathname === '/personal-portfolio/home' ? styles.navButtonDown : styles.navButtonInit
+                pathname === '/personal-portfolio' ? styles.navButtonDown : styles.navButtonInit
             }
         >
             Home

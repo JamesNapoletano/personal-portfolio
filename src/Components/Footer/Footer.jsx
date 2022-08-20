@@ -1,5 +1,5 @@
-import { BrowserRouter } from 'react-router-dom'
 import styles from './Footer.module.css'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
 
@@ -11,11 +11,11 @@ const Footer = () => {
                     personal-portfolio/home
                 </div>
                 <nav className={styles.links}>
-                    <a>Home</a>
-                    <a>Bio</a>
-                    <a>Projects</a>
-                    <a>Solved Problems</a>
-                    <a>Contact</a>
+                    <Link to='/'>Home</Link>
+                    <Link to='/bio'>Bio</Link>
+                    <Link to='/projects'>Projects</Link>
+                    <Link to='/problems'>Solved Problems</Link>
+                    <Link to='/contact'>Contact</Link>
                 </nav>
             </div>
         </div>

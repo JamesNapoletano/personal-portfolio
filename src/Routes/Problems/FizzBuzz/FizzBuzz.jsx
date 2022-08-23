@@ -100,7 +100,7 @@ const FizzBuzz = () => {
             <div>
                 {outputValue ? <>
                     <h2>
-                        Limit: {submittedValue}
+                        Set Limit: {submittedValue}
                     </h2>
                     <div className={styles.outputList}>
                         {outputValue}

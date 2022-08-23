@@ -4,9 +4,27 @@
     border-radius: 23px 23px 6px 6px;
     box-shadow: 10px 20px 70px rgba(0, 0, 0, 0.5);
     margin: 25px;
-    background: linear-gradient(10deg, #0099ff 0%, #0059ff 100%);
     width: fit-content;
     height: fit-content;
+}
+.navBlue {
+    background: linear-gradient(10deg, #0099ff 0%, #0059ff 100%);
+}
+
+.navGreen {
+    background: linear-gradient(10deg, #81b800 0%, #00ce00 100%);
+}
+
+.navRed {
+    background: linear-gradient(10deg, #ff8800 0%, #ff0000 100%);
+}
+
+.navPurple {
+    background: linear-gradient(10deg, #8c00ff 0%, #3700ff 100%);
+}
+
+.navSteel {
+    background: linear-gradient(10deg, #e7e7e7 0%, #b8b8b8 100%);
 }
 
 .navBase {

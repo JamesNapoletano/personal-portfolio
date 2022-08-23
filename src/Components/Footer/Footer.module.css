@@ -4,10 +4,30 @@
     border-radius: 6px 6px 23px 23px;
     box-shadow: 10px 20px 70px rgba(0, 0, 0, 0.5);
     margin: 25px;
-    background: linear-gradient(10deg, #0099ff 0%, #0059ff 100%);
     width: fit-content;
     height: fit-content;
 }
+
+.footerBlue {
+    background: linear-gradient(10deg, #0099ff 0%, #0059ff 100%);
+}
+
+.footerGreen {
+    background: linear-gradient(10deg, #81b800 0%, #00ce00 100%);
+}
+
+.footerRed {
+    background: linear-gradient(10deg, #ff8800 0%, #ff0000 100%);
+}
+
+.footerPurple {
+    background: linear-gradient(10deg, #8c00ff 0%, #3700ff 100%);
+}
+
+.footerSteel {
+    background: linear-gradient(10deg, #e7e7e7 0%, #b8b8b8 100%);
+}
+
 
 .footerBase {
     box-sizing: border-box;
@@ -45,12 +65,14 @@
     font-weight: 300;
     color: white;
 }
+
 .links a:link {
     border-right: 1px solid white;
     border-bottom: 1px solid white;
     font-weight: 300;
     color: white;
 }
+
 .links a:visited {
     border-right: 1px solid white;
     border-bottom: 1px solid white;

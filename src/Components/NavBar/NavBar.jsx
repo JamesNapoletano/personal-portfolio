@@ -1,8 +1,36 @@
 import styles from './NavBar.module.css';
 import { Link, useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 const NavBar = () => {
     const { pathname } = useLocation();
+
+    const [navStrokeColor, setNavStrokeColor] = useState(`${styles.navStroke} ${styles.navBlue}`)
+
+    useEffect(() => {
+        switch (pathname) {
+            case '/personal-portfolio/':
+                console.log('case1')
+                setNavStrokeColor(`${styles.navStroke} ${styles.navBlue}`)
+                break;
+            case '/personal-portfolio/bio':
+                console.log('case2')
+                setNavStrokeColor(`${styles.navStroke} ${styles.navGreen}`)
+                break;
+            case '/personal-portfolio/projects':
+                setNavStrokeColor(`${styles.navStroke} ${styles.navRed}`)
+                break;
+            case '/personal-portfolio/problems':
+                setNavStrokeColor(`${styles.navStroke} ${styles.navPurple}`)
+                break;
+            case '/personal-portfolio/contact':
+                setNavStrokeColor(`${styles.navStroke} ${styles.navSteel}`)
+                break;
+            default:
+                setNavStrokeColor(`${styles.navStroke} ${styles.navBlue}`)
+        }
+    }, [pathname])
+
     const homeBtn = (
         <Link
             to="personal-portfolio/"
@@ -47,7 +75,7 @@ const NavBar = () => {
     )
     return (
 
-        <div className={styles.navStroke}>
+        <div className={navStrokeColor}>
             <nav className={styles.navBase}>
                 {homeBtn}
                 {bioBtn}

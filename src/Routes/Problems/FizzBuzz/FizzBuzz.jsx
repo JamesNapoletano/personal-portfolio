@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import styles from './FizzBuzz.module.css'
 
 const FizzBuzz = () => {
     const [inputValue, setInputValue] = useState('')
@@ -12,30 +13,80 @@ const FizzBuzz = () => {
     }, [inputValue])
 
     const submit = () => {
-        if (inputValue < 1000 && inputValue > 0) {
+        if (inputValue < 1000 && inputValue > 2) {
             setSubmittedValue(inputValue)
             fizzBuzzGen(inputValue)
         } else if (inputValue === '') {
             setOutputValue('')
         } else {
-            return setOutputValue('Please enter a number between 1 and 999')
+            setSubmittedValue(inputValue)
+            return setOutputValue('Please enter a number between 3 and 999')
         }
     }
 
+
     const fizzBuzzGen = (num) => {
-        const genOutput = []
-        for (var i = 1; i <= num; i++) {
+        let genOutput = []
+        let genOutputList = []
+
+        for (let i = 1; i <= num; i += 3) {
             if (i % 3 === 0) {
-                genOutput.push('Fizz' + (i % 5 === 0 ? 'Buzz' : ''))
+                genOutput.push(i + ': Fizz' + (i % 5 === 0 ? 'Buzz' : ''))
             }
             else if (i % 5 === 0) {
-                genOutput.push('Buzz')
+                genOutput.push(i + ': Buzz')
             }
             else {
                 genOutput.push(i.toString())
             }
         }
-        setOutputValue(genOutput.join(', '))
+        genOutputList.push(<ul>{genOutput.map((value) => {
+            return <li>{value}</li>
+        }
+        )
+        }
+        </ul>
+        )
+        genOutput = []
+        for (let i = 2; i <= num; i += 3) {
+            if (i % 3 === 0) {
+                genOutput.push(i + ': Fizz' + (i % 5 === 0 ? 'Buzz' : ''))
+            }
+            else if (i % 5 === 0) {
+                genOutput.push(i + ': Buzz')
+            }
+            else {
+                genOutput.push(i.toString())
+            }
+        }
+        genOutputList.push(<ul>{genOutput.map((value) => {
+            return <li>{value}</li>
+        }
+        )
+        }
+        </ul>
+        )
+        genOutput = []
+        for (let i = 3; i <= num; i += 3) {
+            if (i % 3 === 0) {
+                genOutput.push(i + ': Fizz' + (i % 5 === 0 ? 'Buzz' : ''))
+            }
+            else if (i % 5 === 0) {
+                genOutput.push(i + ': Buzz')
+            }
+            else {
+                genOutput.push(i.toString())
+            }
+        }
+        genOutputList.push(<ul>{genOutput.map((value) => {
+            return <li>{value}</li>
+        }
+        )
+        }
+        </ul>
+        )
+
+        setOutputValue(genOutputList)
     }
 
     return (
@@ -51,7 +102,7 @@ const FizzBuzz = () => {
                     <h2>
                         Limit: {submittedValue}
                     </h2>
-                    <div>
+                    <div className={styles.outputList}>
                         {outputValue}
                     </div>
                 </> :

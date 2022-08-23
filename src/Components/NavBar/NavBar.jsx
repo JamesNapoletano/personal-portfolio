@@ -26,6 +26,12 @@ const NavBar = () => {
             case '/personal-portfolio/contact':
                 setNavStrokeColor(`${styles.navStroke} ${styles.navSteel}`)
                 break;
+            default:
+                pathname.includes('/personal-portfolio/projects') ?
+                    setNavStrokeColor(`${styles.navStroke} ${styles.navRed}`) :
+                    pathname.includes('/personal-portfolio/problems') ?
+                        setNavStrokeColor(`${styles.navStroke} ${styles.navPurple}`) :
+                        setNavStrokeColor(`${styles.navStroke} ${styles.navBlue}`)
         }
     }, [pathname])
 

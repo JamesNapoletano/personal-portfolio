@@ -26,6 +26,12 @@ const Footer = () => {
             case '/personal-portfolio/contact':
                 setFooterStrokeColor(`${styles.footerStroke} ${styles.footerSteel}`)
                 break;
+            default:
+                pathname.includes('/personal-portfolio/projects') ?
+                    setFooterStrokeColor(`${styles.footerStroke} ${styles.footerRed}`) :
+                    pathname.includes('/personal-portfolio/problems') ?
+                        setFooterStrokeColor(`${styles.footerStroke} ${styles.footerPurple}`) :
+                        setFooterStrokeColor(`${styles.footerStroke} ${styles.footerBlue}`)
         }
     }, [pathname])
 

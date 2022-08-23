@@ -8,31 +8,17 @@ const Footer = () => {
     const [footerStrokeColor, setFooterStrokeColor] = useState(`${styles.footerStroke} ${styles.footerBlue}`)
 
     useEffect(() => {
-        switch (pathname) {
-            case '/personal-portfolio/':
-                console.log('case1')
-                setFooterStrokeColor(`${styles.footerStroke} ${styles.footerBlue}`)
-                break;
-            case '/personal-portfolio/bio':
-                console.log('case2')
-                setFooterStrokeColor(`${styles.footerStroke} ${styles.footerGreen}`)
-                break;
-            case '/personal-portfolio/projects':
-                setFooterStrokeColor(`${styles.footerStroke} ${styles.footerRed}`)
-                break;
-            case '/personal-portfolio/problems':
-                setFooterStrokeColor(`${styles.footerStroke} ${styles.footerPurple}`)
-                break;
-            case '/personal-portfolio/contact':
-                setFooterStrokeColor(`${styles.footerStroke} ${styles.footerSteel}`)
-                break;
-            default:
+        pathname === '/personal-portfolio/' ?
+            setFooterStrokeColor(`${styles.footerStroke} ${styles.footerBlue}`) :
+            pathname.includes('/personal-portfolio/bio') ?
+                setFooterStrokeColor(`${styles.footerStroke} ${styles.footerGreen}`) :
                 pathname.includes('/personal-portfolio/projects') ?
                     setFooterStrokeColor(`${styles.footerStroke} ${styles.footerRed}`) :
                     pathname.includes('/personal-portfolio/problems') ?
                         setFooterStrokeColor(`${styles.footerStroke} ${styles.footerPurple}`) :
-                        setFooterStrokeColor(`${styles.footerStroke} ${styles.footerBlue}`)
-        }
+                        pathname.includes('/personal-portfolio/contact') ?
+                            setFooterStrokeColor(`${styles.footerStroke} ${styles.footerSteel}`) :
+                            setFooterStrokeColor(`${styles.footerStroke} ${styles.footerBlue}`)
     }, [pathname])
 
     return (

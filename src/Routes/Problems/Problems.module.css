@@ -18,6 +18,19 @@
     padding: 1.5px 5px;
 }
 
+.probNavBtn:hover {
+    box-sizing: border-box;
+    background: linear-gradient(10deg, rgba(114, 114, 114, 0.5) 10%, rgba(255, 255, 255, 0.5) 100%);
+    font-weight: 500;
+    text-decoration: none;
+    color: rgba(22, 22, 22);
+    height: fit-content;
+    width: 150px;
+    border: 5px outset grey;
+    border-radius: 8px;
+    padding: 1.5px 5px;
+}
+
 .probNavBtnSelected {
     box-sizing: border-box;
     background: linear-gradient(0deg, rgba(78, 78, 78, 0.8) 0%, rgba(22, 22, 22, 0.8) 100%);

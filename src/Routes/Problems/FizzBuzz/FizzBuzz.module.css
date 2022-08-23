@@ -17,3 +17,8 @@
 .outputList li {
     border-bottom: 1px solid black;
 }
+
+.contentBox {
+    width: 450px;
+    margin: 0 auto;
+}

@@ -8,31 +8,17 @@ const NavBar = () => {
     const [navStrokeColor, setNavStrokeColor] = useState(`${styles.navStroke} ${styles.navBlue}`)
 
     useEffect(() => {
-        switch (pathname) {
-            case '/personal-portfolio/':
-                console.log('case1')
-                setNavStrokeColor(`${styles.navStroke} ${styles.navBlue}`)
-                break;
-            case '/personal-portfolio/bio':
-                console.log('case2')
-                setNavStrokeColor(`${styles.navStroke} ${styles.navGreen}`)
-                break;
-            case '/personal-portfolio/projects':
-                setNavStrokeColor(`${styles.navStroke} ${styles.navRed}`)
-                break;
-            case '/personal-portfolio/problems':
-                setNavStrokeColor(`${styles.navStroke} ${styles.navPurple}`)
-                break;
-            case '/personal-portfolio/contact':
-                setNavStrokeColor(`${styles.navStroke} ${styles.navSteel}`)
-                break;
-            default:
+        pathname === '/personal-portfolio/' ?
+            setNavStrokeColor(`${styles.navStroke} ${styles.navBlue}`) :
+            pathname.includes('/personal-portfolio/bio') ?
+                setNavStrokeColor(`${styles.navStroke} ${styles.navGreen}`) :
                 pathname.includes('/personal-portfolio/projects') ?
                     setNavStrokeColor(`${styles.navStroke} ${styles.navRed}`) :
                     pathname.includes('/personal-portfolio/problems') ?
                         setNavStrokeColor(`${styles.navStroke} ${styles.navPurple}`) :
-                        setNavStrokeColor(`${styles.navStroke} ${styles.navBlue}`)
-        }
+                        pathname.includes('/personal-portfolio/contact') ?
+                            setNavStrokeColor(`${styles.navStroke} ${styles.navSteel}`) :
+                            setNavStrokeColor(`${styles.navStroke} ${styles.navBlue}`)
     }, [pathname])
 
     const homeBtn = (

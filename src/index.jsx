@@ -11,7 +11,7 @@ import reportWebVitals from './reportWebVitals';
 import NavBar from './Components/NavBar/NavBar';
 import Footer from './Components/Footer/Footer';
 import Bio from './Routes/Bio/Bio';
-import Projects from './Routes/Projects';
+import Projects from './Routes/Projects/Projects';
 import Problems from './Routes/Problems/Problems';
 import FizzBuzz from './Routes/Problems/FizzBuzz/FizzBuzz';
 import WordPalindrome from './Routes/Problems/WordPalindrome/WordPalindrome';

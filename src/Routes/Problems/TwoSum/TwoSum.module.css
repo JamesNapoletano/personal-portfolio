@@ -1,0 +1,37 @@
+.inputFlexRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputFlexRow button {
+    margin: 50px;
+}
+
+.twoSumInputs {
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 10px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    padding: 10px;
+    width: 150px;
+    height: 155px;
+}
+
+.twoSumInputs p {
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid white;
+    border-bottom: none;
+    padding: 5px;
+    width: 100%;
+}
+
+.twoSumInputs input {
+    box-sizing: border-box;
+    margin: auto;
+    width: 5em;
+}
+

@@ -22,7 +22,8 @@ const TwoSum = () => {
     }, [inputValueOne, inputValueTwo, inputValueThree, inputValueFour, targetValue, outputValue])
 
     const submit = () => {
-        const subValArr = []
+        const chkValuesArr = []
+        let chkTarget = Number()
         if (inputValueOne === '' &&
             inputValueTwo === '' &&
             inputValueThree === '' &&
@@ -31,25 +32,27 @@ const TwoSum = () => {
             setOutputValue('')
         } else {
             if (Number(inputValueOne) !== 0 && inputValueOne !== '') {
-                subValArr.push(inputValueOne)
+                chkValuesArr.push(Number(inputValueOne))
             }
             if (Number(inputValueTwo) !== 0 && inputValueTwo !== '') {
-                subValArr.push(inputValueTwo)
+                chkValuesArr.push(Number(inputValueTwo))
             }
             if (Number(inputValueThree) !== 0 && inputValueThree !== '') {
-                subValArr.push(inputValueThree)
+                chkValuesArr.push(Number(inputValueThree))
             }
             if (Number(inputValueFour) !== 0 && inputValueFour !== '') {
-                subValArr.push(inputValueFour)
+                chkValuesArr.push(Number(inputValueFour))
             }
-            if (Number(targetValue)) {
+            if (targetValue) {
                 setSubmittedTargetValue(targetValue)
+                chkTarget = Number(targetValue)
             }
-            setSubmittedCheckValues(subValArr.join(', '))
-            if (subValArr.length < 2 || targetValue === '') {
+            setSubmittedCheckValues(chkValuesArr.join(', '))
+            if (chkValuesArr.length < 2 || targetValue === '') {
                 setOutputValue('')
             } else {
-                setOutputValue(`${subValArr.join(', ')}, ${targetValue}`)
+                console.log(chkValuesArr)
+                twoSumCalc(chkValuesArr, chkTarget)
             }
         }
     }
@@ -61,6 +64,31 @@ const TwoSum = () => {
         setInputValueFour('')
         setTargetValue('')
     }
+
+    const twoSumCalc = (nums, target) => {
+        const ans = []
+
+        for (let i = 0; i < nums.length; i++) {
+            for (let j = 0; j < nums.length; j++) {
+                if ((nums[i] + nums[j] === target)) {
+                    console.log(nums[i])
+                    console.log(nums[j])
+                    if (i !== j) {
+                        if (!ans.includes(nums[j])) {
+                            ans.push(nums[i], nums[j])
+                        }
+                    }
+                }
+            }
+        }
+
+        if (ans.length === 0) {
+            setOutputValue('None of the numbers add up to the target.')
+        } else {
+            console.log(ans)
+            setOutputValue(`${ans[0]} + ${ans[1]} = ${target}`)
+        }
+    };
 
     return (
         <div>
@@ -102,10 +130,11 @@ const TwoSum = () => {
                     <>
                         <h2>Welcome to Two Sum!</h2>
                         <div>
-                            Two Sum is a calculator of sorts. You can input between 2-4 numbers
-                            into "Check Value Inputs" and a single number into "Target Value Input."
-                            You can then click Submit and see that the calculator will return which
-                            two check values equal the target value.
+                            Two Sum is a calculator of sorts. You can enter between 2-4 numbers
+                            into "Check Value Inputs." However, a check value can not be 0. You can
+                            then enter a single number into "Target Value Input," which can be any
+                            number of your choice. Then click Submit and see that the calculator
+                            will return two check values that equal the target value.
                             <br />
                             Enjoy!
                         </div>

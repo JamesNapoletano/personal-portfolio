@@ -5,7 +5,7 @@
 }
 
 .inputFlexRow button {
-    margin: 50px;
+    margin: 10px 50px;
 }
 
 .twoSumInputs {
@@ -35,3 +35,13 @@
     width: 5em;
 }
 
+.twoSumButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contentBox {
+    width: 450px;
+    margin: 0 auto;
+}

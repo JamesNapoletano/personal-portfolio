@@ -86,7 +86,9 @@ const TwoSum = () => {
             setOutputValue('None of the numbers add up to the target.')
         } else {
             console.log(ans)
-            setOutputValue(`${ans[0]} + ${ans[1]} = ${target}`)
+            ans.length === 4 ?
+                setOutputValue(`${ans[0]} + ${ans[1]} = ${target} and ${ans[2]} + ${ans[3]} = ${target}`) :
+                setOutputValue(`${ans[0]} + ${ans[1]} = ${target}`)
         }
     };
 

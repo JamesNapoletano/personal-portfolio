@@ -41,7 +41,10 @@ export default function Problems() {
     )
 
     return (
-        <div>
+        <>
+        <h1>
+            Solved Problems
+        </h1>
             <nav className={styles.probNav}>
                 {fizzBuzz}
                 {wordPalindrome}
@@ -49,6 +52,6 @@ export default function Problems() {
                 {twoSum}
             </nav>
             {pathname === '/personal-portfolio/problems' ? <>Solved Problems</> : <Outlet />}
-        </div>
+        </>
     )
 }

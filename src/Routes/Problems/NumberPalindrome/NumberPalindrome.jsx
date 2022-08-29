@@ -48,28 +48,31 @@ const NumberPalindrome = () => {
 
     return (
         <div>
-            <h1>
+            <h2>
                 Number Palindrome
-            </h1>
+            </h2>
             <input type='number' value={inputValue} onChange={(e) => { setInputValue(e.target.value) }} />
             <button onClick={submit}>Submit</button>
             <br />
             <div className={styles.contentBox}>
                 {outputValue ? <>
-                    <h2>
+                    <h3>
                         Selected Number: {submittedValue}
-                    </h2>
+                    </h3>
                     <div>
                         {outputValue}
                     </div>
                 </> :
                     <>
-                        <h2>Welcome to Number Palindrome!</h2>
+                        <h3>
+                            Welcome to Number Palindrome!
+                        </h3>
                         <div>
                             A number palindrome is a number that is equal to itself even if the
                             number is reversed. The problem at-hand is determining if a number is
                             indeed a palindrome or not. This solution will offer palindrome
                             verification for a number of your choice.
+                            <br />
                             <br />
                             Enjoy!
                         </div>

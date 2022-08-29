@@ -1,5 +1,9 @@
 export default function Bio() {
     return (
-        <div>Bio</div>
+        <>
+            <h1>
+                Biography
+            </h1>
+        </>
     )
 }

@@ -36,28 +36,31 @@ const WordPalindrome = () => {
 
     return (
         <div>
-            <h1>
+            <h2>
                 Word Palindrome
-            </h1>
+            </h2>
             <input type='text' value={inputValue} onChange={(e) => { isLetter(e.target.value) }} />
             <button onClick={submit}>Submit</button>
             <br />
             <div className={styles.contentBox}>
                 {outputValue ?
                     <>
-                        <h2>
+                        <h3>
                             Selected Word: {submittedValue}
-                        </h2>
+                        </h3>
                         <div>
                             {outputValue}
                         </div>
                     </> :
                     <>
-                        <h2>Welcome to Word Palindrome!</h2>
+                        <h3>
+                            Welcome to Word Palindrome!
+                        </h3>
                         <div>
                             A word palindrome is a word that is spelled the same as its reversed
                             form. This is a verification for if a word is indeed a palindrome or not.
                             Please input a word and click the Submit button.
+                            <br />
                             <br />
                             Enjoy!
                         </div>

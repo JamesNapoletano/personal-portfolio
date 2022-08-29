@@ -23,6 +23,10 @@ export default function Project() {
     })
 
     return (
+        <>
+            <h1>
+                Projects
+            </h1>
             <div className={styles.gitRepos}>
                 <h3>
                     Github Repositories
@@ -31,6 +35,7 @@ export default function Project() {
                     {repoCards}
                 </ul>
             </div>
+        </>
     )
 }
 

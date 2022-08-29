@@ -91,29 +91,32 @@ const FizzBuzz = () => {
 
     return (
         <div>
-            <h1>
+            <h2>
                 FizzBuzz
-            </h1>
+            </h2>
             <input type='number' value={inputValue} onChange={(e) => { setInputValue(e.target.value) }} />
             <button onClick={submit}>Submit</button>
             <br />
             <div className={styles.contentBox}>
                 {outputValue ? <>
-                    <h2>
+                    <h3>
                         Set Limit: {submittedValue}
-                    </h2>
+                    </h3>
                     <div className={styles.outputList}>
                         {outputValue}
                     </div>
                 </> :
                     <>
-                        <h2>Welcome to FizzBuzz!</h2>
+                        <h3>
+                            Welcome to FizzBuzz!
+                        </h3>
                         <div>
                             The concept is simple: enter an upper limit for the FizzBuzz generator.
                             Returned, will be, all numbers from 1 to your specified limit. All numbers
                             divisible by 3 will be replaced with "Fizz," while all numbers divisible by
                             5 will be replaced with "Buzz." All numbers divisible by both 3 and 5 will
                             be replaced with "FizzBuzz."
+                            <br />
                             <br />
                             Enjoy!
                         </div>

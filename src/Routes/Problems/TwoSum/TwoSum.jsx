@@ -94,9 +94,9 @@ const TwoSum = () => {
 
     return (
         <div>
-            <h1>
+            <h2>
                 Two Sum
-            </h1>
+            </h2>
             <div className={styles.inputFlexRow}>
                 <div className={styles.twoSumInputs}>
                     <p>Check Value Inputs:</p>
@@ -120,23 +120,26 @@ const TwoSum = () => {
             </div>
             <div className={styles.contentBox}>
                 {outputValue ? <>
-                    <h2>
+                    <h3>
                         Check Values: {submittedCheckValues}
                         <br />
                         Target Value: {submittedTargetValue}
-                    </h2>
+                    </h3>
                     <div>
                         {outputValue}
                     </div>
                 </> :
                     <>
-                        <h2>Welcome to Two Sum!</h2>
+                        <h3>
+                            Welcome to Two Sum!
+                        </h3>
                         <div>
                             Two Sum is a calculator of sorts. You can enter between 2-4 numbers
                             into "Check Value Inputs." However, a check value can not be 0. You can
                             then enter a single number into "Target Value Input," which can be any
                             number of your choice. Then click Submit and see that the calculator
                             will return two check values that equal the target value.
+                            <br />
                             <br />
                             Enjoy!
                         </div>

@@ -45,5 +45,6 @@
 .gitRepos a {
     box-sizing: border-box;
     color: white;
+    text-shadow: none;
     text-decoration: none;
 }

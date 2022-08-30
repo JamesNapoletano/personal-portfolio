@@ -1,0 +1,30 @@
+.contentBox {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.leftPhoto {
+    box-sizing: border-box;
+    margin: 0 15px 5px 0;
+    border: 2px solid black;
+    min-width: 128px;
+    height: 160px;
+    background-color: purple;
+    float: left;
+}
+
+.rightPhoto {
+    box-sizing: border-box;
+    margin: 0 0 5px 15px;
+    border: 2px solid black;
+    min-width: 128px;
+    height: 160px;
+    background-color: red;
+    float: right;
+}
+
+.bioText {
+    margin: 0 0 1em;
+    text-align: left;
+    text-indent: 2em;
+}

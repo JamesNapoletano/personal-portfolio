@@ -51,9 +51,17 @@ const NumberPalindrome = () => {
             <h2>
                 Number Palindrome
             </h2>
-            <input type='number' value={inputValue} onChange={(e) => { setInputValue(e.target.value) }} />
-            <button onClick={submit}>Submit</button>
-            <br />
+            <div className={styles.inputFlexRow}>
+                <div className={styles.numberPalindromeInput}>
+                    <p>
+                        Number
+                        <br />
+                        Input:
+                    </p>
+                    <input type='number' value={inputValue} onChange={(e) => { setInputValue(e.target.value) }} />
+                    <button onClick={submit}>Submit</button>
+                </div>
+            </div>
             <div className={styles.contentBox}>
                 {outputValue ? <>
                     <h3>

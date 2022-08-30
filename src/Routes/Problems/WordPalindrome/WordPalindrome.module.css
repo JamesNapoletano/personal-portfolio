@@ -1,3 +1,40 @@
+.inputFlexRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wordPalindromeInput {
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 10px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    padding: 10px;
+    width: 150px;
+    height: 155px;
+}
+
+.wordPalindromeInput p {
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid white;
+    border-bottom: none;
+    padding: 5px;
+    width: 100%;
+}
+
+.wordPalindromeInput input {
+    box-sizing: border-box;
+    margin: auto;
+    width: 7em;
+}
+
+.wordPalindromeInput button {
+    box-sizing: border-box;
+    margin: auto;
+}
 .contentBox {
     width: 450px;
     margin: 0 auto;

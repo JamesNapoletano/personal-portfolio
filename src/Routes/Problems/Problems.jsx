@@ -42,16 +42,28 @@ export default function Problems() {
 
     return (
         <>
-        <h1>
-            Solved Problems
-        </h1>
+            <h1>
+                Solved Problems
+            </h1>
             <nav className={styles.probNav}>
                 {fizzBuzz}
                 {wordPalindrome}
                 {numberPalindrome}
                 {twoSum}
             </nav>
-            {pathname === '/personal-portfolio/problems' ? <>Solved Problems</> : <Outlet />}
+            {pathname === '/personal-portfolio/problems' ?
+                <>
+                    <h2>
+                        Solved Problems
+                    </h2>
+                    <div className={styles.contentBox}>
+                        Here we have a number of solved coding problems. A coding problem
+                        will typically provide you with a scope describing desired input(s) and
+                        desired output(s). Above, are four solved coding problems. Go to each
+                        problem and participate in the fun!
+                    </div>
+                </> :
+                <Outlet />}
         </>
     )
 }

@@ -39,9 +39,17 @@ const WordPalindrome = () => {
             <h2>
                 Word Palindrome
             </h2>
-            <input type='text' value={inputValue} onChange={(e) => { isLetter(e.target.value) }} />
-            <button onClick={submit}>Submit</button>
-            <br />
+            <div className={styles.inputFlexRow}>
+                <div className={styles.wordPalindromeInput}>
+                    <p>
+                        Word
+                        <br />
+                        Input:
+                    </p>
+                    <input type='text' value={inputValue} onChange={(e) => { isLetter(e.target.value) }} />
+                    <button onClick={submit}>Submit</button>
+                </div>
+            </div>
             <div className={styles.contentBox}>
                 {outputValue ?
                     <>

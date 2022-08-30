@@ -94,9 +94,17 @@ const FizzBuzz = () => {
             <h2>
                 FizzBuzz
             </h2>
-            <input type='number' value={inputValue} onChange={(e) => { setInputValue(e.target.value) }} />
-            <button onClick={submit}>Submit</button>
-            <br />
+            <div className={styles.inputFlexRow}>
+                <div className={styles.fizzBuzzInput}>
+                    <p>
+                        FizzBuzz
+                        <br />
+                        Limit:
+                    </p>
+                    <input type='number' value={inputValue} onChange={(e) => { setInputValue(e.target.value) }} />
+                    <button onClick={submit}>Submit</button>
+                </div>
+            </div>
             <div className={styles.contentBox}>
                 {outputValue ? <>
                     <h3>

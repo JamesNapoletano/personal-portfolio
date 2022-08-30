@@ -1,4 +1,9 @@
-.gitRepos {
+.flexRow {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projectLists {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -7,7 +12,7 @@
     padding: 10px;
 }
 
-.gitRepos ul {
+.projectLists ul {
     margin: 0;
     background: linear-gradient(0deg, rgba(78, 78, 78, 0.8) 0%, rgba(22, 22, 22, 0.8) 100%);
     border-radius: 4px;
@@ -16,7 +21,12 @@
     list-style: none;
 }
 
-.gitRepos li {
+.greyd {
+    color: grey;
+    background-color: darkgrey;
+}
+
+.projectLists li {
     margin: 10px 0;
     border-radius: 8px;
     border: 1px solid white;
@@ -25,7 +35,7 @@
 
 }
 
-.gitRepos li:hover {
+.projectLists li:hover {
     box-sizing: border-box;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
@@ -33,16 +43,17 @@
     text-decoration: none;
 }
 
-.gitRepos h3 {
+.projectLists h3 {
     margin: 0;
-    background: linear-gradient(90deg, rgba(255,255,255,.1) 0%, rgba(122,122,122,1) 30%, rgba(122,122,122,1) 70%, rgba(255,255,255,.15) 100%);
-    border: 1px solid rgba(0,0,0,.1);
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0%, rgba(122, 122, 122, 1) 30%, rgba(122, 122, 122, 1) 70%, rgba(255, 255, 255, .15) 100%);
+    border: 1px solid rgba(0, 0, 0, .1);
     padding: 10px;
+    width: 150px;
     text-align: center;
-    text-shadow: 0px 0px 3px rgba(0,0,0,1);
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
 }
 
-.gitRepos a {
+.projectLists a {
     box-sizing: border-box;
     color: white;
     text-shadow: none;

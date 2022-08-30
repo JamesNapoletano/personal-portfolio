@@ -27,13 +27,24 @@ export default function Project() {
             <h1>
                 Projects
             </h1>
-            <div className={styles.gitRepos}>
-                <h3>
-                    Github Repositories
-                </h3>
-                <ul>
-                    {repoCards}
-                </ul>
+            <div className={styles.flexRow}>
+                <div className={styles.projectLists}>
+                    <h3>
+                        Github Repositories
+                    </h3>
+                    <ul>
+                        {repoCards}
+                    </ul>
+                </div>
+                <div className={styles.projectLists}>
+                    <h3 className={styles.greyd}>
+                        Web Games
+                    </h3>
+                    <ul className={styles.greyd}>
+                        <li className={styles.greyd}>Nuclear Reactor</li>
+                        <li className={styles.greyd}>Stimulation Game</li>
+                    </ul>
+                </div>
             </div>
         </>
     )

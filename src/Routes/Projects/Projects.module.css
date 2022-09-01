@@ -21,11 +21,6 @@
     list-style: none;
 }
 
-.greyd {
-    color: grey;
-    background-color: darkgrey;
-}
-
 .projectLists li {
     margin: 10px 0;
     border-radius: 8px;

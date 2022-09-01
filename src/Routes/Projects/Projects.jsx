@@ -1,9 +1,11 @@
 import styles from './Projects.module.css'
 import axios from "axios"
 import { useEffect, useState } from "react"
+import { Link, Outlet, useLocation } from 'react-router-dom'
 
-export default function Project() {
+export default function Projects() {
     const [repoData, setRepoData] = useState([])
+    const { pathname } = useLocation()
 
     useEffect(() => {
         (async () => {
@@ -22,30 +24,43 @@ export default function Project() {
         )
     })
 
+    const stimulationGame = (
+        <Link
+            to='stimulationgame'
+        >
+            Stimulation Game
+        </Link>
+    )
+
     return (
         <>
-            <h1>
-                Projects
-            </h1>
-            <div className={styles.flexRow}>
-                <div className={styles.projectLists}>
-                    <h3>
-                        Github Repositories
-                    </h3>
-                    <ul>
-                        {repoCards}
-                    </ul>
-                </div>
-                <div className={styles.projectLists}>
-                    <h3 className={styles.greyd}>
-                        Web Games
-                    </h3>
-                    <ul className={styles.greyd}>
-                        <li className={styles.greyd}>Nuclear Reactor</li>
-                        <li className={styles.greyd}>Stimulation Game</li>
-                    </ul>
-                </div>
-            </div>
+            {pathname === '/personal-portfolio/projects' ?
+                <>
+                    <h1>
+                        Projects
+                    </h1>
+                    <div className={styles.flexRow}>
+                        <div className={styles.projectLists}>
+                            <h3>
+                                Github Repositories
+                            </h3>
+                            <ul>
+                                {repoCards}
+                            </ul>
+                        </div>
+                        <div className={styles.projectLists}>
+                            <h3>
+                                Web Games
+                            </h3>
+                            <ul>
+                                <li>Nuclear Reactor</li>
+                                <li>{stimulationGame}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </> :
+                <Outlet />
+            }
         </>
     )
 }

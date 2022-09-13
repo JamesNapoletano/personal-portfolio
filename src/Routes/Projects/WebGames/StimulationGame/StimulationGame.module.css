@@ -1,3 +1,8 @@
+.contentBox {
+    width: 450px;
+    margin: 0 auto;
+}
+
 .flexRow {
     display: flex;
     flex-direction: row;
@@ -44,6 +49,7 @@
     width: 100px;
     height: 60px;
 }
+
 .levelFourTrue {
     width: 200px;
     height: 60px;
@@ -54,6 +60,7 @@
     width: 200px;
     height: 60px;
 }
+
 .levelFiveTrue {
     width: 200px;
     height: 120px;

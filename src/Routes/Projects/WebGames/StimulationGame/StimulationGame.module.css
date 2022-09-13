@@ -18,56 +18,160 @@
 }
 
 .levelOneTrue {
+    box-sizing: border-box;
+    margin: 1px;
+    box-shadow: inset rgba(0, 0, 0, 0.5) -5px 5px 10px;
+    border-radius: 15px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid white;
+    border-left: 1px solid transparent;
     width: 50px;
     height: 30px;
-    background-color: aqua;
+    color: white;
+    background-color: transparent;
 }
 
 .levelOneFalse {
+    box-sizing: border-box;
+    margin: 1px;
+    box-shadow: rgba(0, 0, 0, 0.5) -5px 5px 10px;
+    border-radius: 15px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid white;
+    border-right: 1px solid transparent;
+    border-left: 1px solid white;
     width: 50px;
     height: 30px;
+    color: black;
+    background-color: transparent;
 }
 
 .levelTwoTrue {
+    box-sizing: border-box;
+    margin: 1px;
+    box-shadow: inset gold 0px 0px 5px;
+    border-radius: 25px;
+    border: 2px solid gold;
     width: 50px;
     height: 60px;
-    background-color: aqua;
+    color: gold;
+    background-image: radial-gradient(circle at center, black 0, transparent 70%),
+        radial-gradient(ellipse at top, black 0, transparent 70%);
+    background-color: rgb(32, 101, 167);
 }
 
 .levelTwoFalse {
+    box-sizing: border-box;
+    margin: 2px 1px;
+    box-shadow: gold 0px 0px 5px;
+    border-radius: 25px;
+    border: 2px solid gold;
     width: 50px;
     height: 60px;
+    color: gold;
+    background-image: radial-gradient(circle at center, rgb(102, 179, 252) 0, transparent 70%),
+        radial-gradient(ellipse at top, rgb(102, 179, 252) 0, transparent 70%);
+    background-color: rgb(32, 101, 167);
 }
 
 .levelThreeTrue {
+    box-sizing: border-box;
+    margin: 2px 2px;
+    box-shadow: inset rgba(0, 89, 255, 0.7) 0px 0px 50px;
+    border-radius: 30px;
+    border-top: none;
+    border-bottom: none;
+    border-right: 4px solid black;
+    border-left: 4px solid black;
     width: 100px;
     height: 60px;
-    background-color: aqua;
+    color: white;
+    text-shadow: white 0px 0px 10px;
+    background-image: radial-gradient(circle at top, black 0, rgb(255, 255, 255) 60%, transparent 90%);
+    background-color: transparent;
 }
 
 .levelThreeFalse {
+    box-sizing: border-box;
+    margin: 2px 2px;
+    box-shadow: inset rgba(0, 89, 255, 0.7) 0px 0px 50px;
+    border-radius: 30px;
+    border-top: none;
+    border-bottom: none;
+    border-right: 4px solid white;
+    border-left: 4px solid white;
     width: 100px;
     height: 60px;
+    color: white;
+    text-shadow: white 0px 0px 10px;
+    background-image: radial-gradient(circle at bottom, white 0, rgb(0, 0, 0) 60%, transparent 90%);
+    background-color: transparent;
 }
 
 .levelFourTrue {
+    box-sizing: border-box;
+    margin: 2px 4px;
+    box-shadow: inset rgb(41, 143, 184) 0px 8px 30px;
+    border-radius: 30px;
+    border-top: none;
+    border-bottom: 8px solid white;
+    border-right: none;
+    border-left: none;
+    padding-top: 9px;
     width: 200px;
     height: 60px;
-    background-color: aqua;
+    background-image: radial-gradient(ellipse at bottom, white 0, transparent 100%);
+    background-color: transparent;
 }
 
 .levelFourFalse {
+    box-sizing: border-box;
+    margin: 2px 4px;
+    box-shadow: inset rgb(0, 71, 99) 0px 8px 30px;
+    border-radius: 30px;
+    border-top: 8px solid black;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    padding-bottom: 9px;
     width: 200px;
     height: 60px;
+    background-image: radial-gradient(ellipse at top, rgba(0, 0, 0, 0.363) 0, transparent 100%);
 }
 
 .levelFiveTrue {
+    box-sizing: border-box;
+    margin: 4px;
+    box-shadow: gold 0px 0px 60px;
+    border-radius: 60px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
     width: 200px;
     height: 120px;
-    background-color: aqua;
+    color: gold;
+    background:
+        linear-gradient(217deg, rgba(255, 0, 255, .8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(255, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 255, 255, .8), rgba(0, 0, 255, 0) 70.71%);
 }
 
 .levelFiveFalse {
+    box-sizing: border-box;
+    margin: 4px;
+    box-shadow: silver 0px 0px 60px;
+    border-radius: 60px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
     width: 200px;
     height: 120px;
+    color: gold;
+    background:
+        linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
 }

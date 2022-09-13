@@ -50,12 +50,12 @@
 .levelTwoTrue {
     box-sizing: border-box;
     margin: 1px;
-    box-shadow: inset gold 0px 0px 5px;
+    box-shadow: inset silver 0px 0px 5px;
     border-radius: 25px;
-    border: 2px solid gold;
+    border: 2px solid silver;
     width: 50px;
     height: 60px;
-    color: gold;
+    color: silver;
     background-image: radial-gradient(circle at center, black 0, transparent 70%),
         radial-gradient(ellipse at top, black 0, transparent 70%);
     background-color: rgb(32, 101, 167);

@@ -1,0 +1,120 @@
+.contentBox {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.contentBox p {
+    text-align: left;
+    text-indent: 30px;
+    margin: 0;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.systemLevel {
+    box-shadow: inset black 0 0 10px;
+    border-radius: 4px;
+    border: 4px ridge yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    height: 3em;
+    text-shadow: none;
+}
+
+.sysOkay {
+    color: white;
+    background: black;
+}
+
+.sysLvl1 {
+    color: black;
+    background: yellow;
+}
+
+.sysLvl2 {
+    color: black;
+    background: orange;
+}
+
+.sysLvl3 {
+    color: yellow;
+    background: red;
+}
+
+.sysCritical {
+    box-shadow: red 0 0 20px;
+    color: red;
+    background: black;
+}
+
+.nukeBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.nukeBtns button {
+    box-sizing: border-box;
+    box-shadow: inset black 0 0 5px;
+    margin: 2px;
+    border-radius: 4px;
+    border: 4px ridge yellow;
+    width: 150px;
+    height: 50px;
+    color: white;
+}
+
+.btnOn {
+    background: linear-gradient(60deg, #abab00 0%, yellow 14%, rgb(0, 70, 0) 15%, rgb(0, 150, 0) 100%);
+}
+
+.btnOff {
+    background: linear-gradient(60deg, #abab00 0%, yellow 14%, rgb(110, 0, 0) 15%, rgb(150, 0, 0) 100%);
+}
+
+.sysColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.sysMsg {
+    box-sizing: border-box;
+    box-shadow: inset black 0 0 50px;
+    border-radius: 4px;
+    border: 4px ridge tan;
+    width: 308px;
+    height: 216px;
+    background: rgb(49, 56, 63);
+}
+
+.sysMsg h3 {
+    margin: 1em;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+}
+
+.sysMsg p {
+    margin: 1em;
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+}

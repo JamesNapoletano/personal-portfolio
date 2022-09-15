@@ -24,6 +24,14 @@ export default function Projects() {
         )
     })
 
+    const nuclearReactor = (
+        <Link
+            to='nuclearreactor'
+        >
+            Nuclear Reactor
+        </Link>
+    )
+
     const stimulationGame = (
         <Link
             to='stimulationgame'
@@ -53,7 +61,7 @@ export default function Projects() {
                                 Web Games
                             </h3>
                             <ul>
-                                <li>Nuclear Reactor</li>
+                                <li>{nuclearReactor}</li>
                                 <li>{stimulationGame}</li>
                             </ul>
                         </div>

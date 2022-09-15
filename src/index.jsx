@@ -12,6 +12,7 @@ import NavBar from './Components/NavBar/NavBar';
 import Footer from './Components/Footer/Footer';
 import Bio from './Routes/Bio/Bio';
 import Projects from './Routes/Projects/Projects';
+import NuclearReactor from './Routes/Projects/WebGames/NuclearReactor/NuclearReactor';
 import StimulationGame from './Routes/Projects/WebGames/StimulationGame/StimulationGame';
 import Problems from './Routes/Problems/Problems';
 import FizzBuzz from './Routes/Problems/FizzBuzz/FizzBuzz';
@@ -33,6 +34,7 @@ root.render(
                 <Route path='personal-portfolio/' element={<App />} />
                 <Route path='personal-portfolio/bio' element={<Bio />} />
                 <Route path='personal-portfolio/projects' element={<Projects />}>
+                  <Route path='nuclearreactor' element={<NuclearReactor />} />
                   <Route path='stimulationgame' element={<StimulationGame />} />
                 </Route>
                 <Route path='personal-portfolio/problems' element={<Problems />}>

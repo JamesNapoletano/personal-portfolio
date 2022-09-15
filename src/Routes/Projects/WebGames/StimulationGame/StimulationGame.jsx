@@ -56,7 +56,7 @@ export default function StimulationGame() {
 
     const closeBtn = (
         <Link to='..'>
-            <button>
+            <button onClick={() => { setStartState(false) }}>
                 Close
             </button>
         </Link>

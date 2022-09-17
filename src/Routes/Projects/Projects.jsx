@@ -24,6 +24,14 @@ export default function Projects() {
         )
     })
 
+    const cropTracker = (
+        <Link
+            to=''
+        >
+            Crop Tracker
+        </Link>
+    )
+
     const nuclearReactor = (
         <Link
             to='nuclearreactor'
@@ -54,6 +62,14 @@ export default function Projects() {
                             </h3>
                             <ul>
                                 {repoCards}
+                            </ul>
+                        </div>
+                        <div className={styles.projectLists}>
+                            <h3>
+                                Web Apps
+                            </h3>
+                            <ul>
+                                <li>{cropTracker}</li>
                             </ul>
                         </div>
                         <div className={styles.projectLists}>

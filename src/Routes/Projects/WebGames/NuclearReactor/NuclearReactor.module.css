@@ -76,7 +76,7 @@
     border-radius: 4px;
     border: 4px ridge yellow;
     width: 150px;
-    height: 50px;
+    height: 63px;
     color: white;
 }
 
@@ -102,7 +102,8 @@
     border-radius: 4px;
     border: 4px ridge tan;
     width: 308px;
-    height: 216px;
+    height: 268px;
+    white-space: pre-line;
     background: rgb(49, 56, 63);
 }
 
@@ -117,4 +118,13 @@
     text-align: left;
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
+}
+
+ol {
+    text-align: left;
+}
+
+.forDev {
+    color: Red;
+    background-color: black;
 }

@@ -1,3 +1,5 @@
+import UnderDevelopment from '../../../../Components/UnderDevelopment/UnderDevelopment'
+
 import styles from './NuclearReactor.module.css'
 
 
@@ -378,6 +380,7 @@ export default function NuclearReactor() {
     return (
         <>
             <h1>Nuclear Reactor</h1>
+            <UnderDevelopment />
             <Link to='..'>
                 <button onClick={() => { setStartState(false) }}>
                     Close
@@ -394,9 +397,6 @@ export default function NuclearReactor() {
                             The Nuclear Reactor game is a simplified simulation of the Power
                             Up and Shut Down sequence of a Pressurized Water Nuclear Reactor!
                             <br />
-                            <p className={styles.forDev}>
-                                This is a project in development. Please feel free to play the game as it is developed.
-                            </p>
                             <br />
                             Your objectives are as followed:
                         </p>

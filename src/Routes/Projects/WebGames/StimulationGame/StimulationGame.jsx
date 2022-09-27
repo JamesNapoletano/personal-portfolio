@@ -1,3 +1,5 @@
+import UnderDevelopment from '../../../../Components/UnderDevelopment/UnderDevelopment'
+
 import styles from './StimulationGame.module.css'
 
 import { useState } from "react"
@@ -73,6 +75,9 @@ export default function StimulationGame() {
             <h1>
                 Stimulation Game
             </h1>
+
+            <UnderDevelopment />
+
             {closeBtn}
             {startState === false ?
                 <>
@@ -84,8 +89,8 @@ export default function StimulationGame() {
                             one. You will start with 16 buttons that will have different effects on one-
                             another. It is up to You to figure out the correct method for combining
                             these cells. Note that only cells of the same size will affect each other.
-                            <br/>
-                            <br/>
+                            <br />
+                            <br />
                             Enjoy!
                         </div>
                     </div>
@@ -93,8 +98,8 @@ export default function StimulationGame() {
                 <>
                     {rulesBtn}
                     {resetBtn}
-                    <br/>
-                    <br/>
+                    <br />
+                    <br />
                     {/* Level Five Button(31) or Two Level Four Buttons(29)(30) */}
                     {inputState.inputTwentyNine === true &&
                         inputState.inputThirty === true ?

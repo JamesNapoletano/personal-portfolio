@@ -64,14 +64,14 @@ export default function Projects() {
                                 {repoCards}
                             </ul>
                         </div>
-                        <div className={styles.projectLists}>
+                        {/* <div className={styles.projectLists}>
                             <h3>
                                 Web Apps
                             </h3>
                             <ul>
                                 <li>{cropTracker}</li>
                             </ul>
-                        </div>
+                        </div> */}
                         <div className={styles.projectLists}>
                             <h3>
                                 Web Games

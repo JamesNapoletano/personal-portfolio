@@ -1,3 +1,4 @@
+import UnderDevelopment from '../../Components/UnderDevelopment/UnderDevelopment'
 import styles from './Bio.module.css'
 
 export default function Bio() {
@@ -6,6 +7,7 @@ export default function Bio() {
             <h1>
                 Biography
             </h1>
+            <UnderDevelopment />
             <h2>
                 James Napoletano
             </h2>

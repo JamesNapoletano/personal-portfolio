@@ -53,9 +53,10 @@ code {
   text-shadow: black 0px 0px 2px;
 }
 
-.flex {
+.flexColumn {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 

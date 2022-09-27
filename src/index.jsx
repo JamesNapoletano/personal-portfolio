@@ -19,13 +19,13 @@ import FizzBuzz from './Routes/Problems/FizzBuzz/FizzBuzz';
 import WordPalindrome from './Routes/Problems/WordPalindrome/WordPalindrome';
 import NumberPalindrome from './Routes/Problems/NumberPalindrome/NumberPalindrome';
 import TwoSum from './Routes/Problems/TwoSum/TwoSum';
-import Contact from './Routes/Contact';
+import Contact from './Routes/Contact/Contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <div className='flex'>
+      <div className='flexColumn'>
         <NavBar />
         <div className='contentStroke'>
           <div className='contentBase'>

@@ -2,16 +2,20 @@ import styles from './Projects.module.css'
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { Link, Outlet, useLocation } from 'react-router-dom'
+import { useContext } from 'react'
+import { AccentColorContext } from '../../context/accent-color-context'
 
 export default function Projects() {
     const [repoData, setRepoData] = useState([])
     const { pathname } = useLocation()
+    const { updateAccentColor } = useContext(AccentColorContext)
 
     useEffect(() => {
         (async () => {
             const response = await axios.get('https://api.github.com/users/JamesNapoletano/repos')
             setRepoData(response.data)
         })()
+        updateAccentColor('red')
     }, [])
 
     const repoCards = repoData.map((repo, index) => {
@@ -50,7 +54,7 @@ export default function Projects() {
 
     return (
         <>
-            {pathname === '/personal-portfolio/projects' ?
+            {pathname.includes('/projects') ?
                 <>
                     <h1>
                         Projects
@@ -88,5 +92,4 @@ export default function Projects() {
         </>
     )
 }
-
 

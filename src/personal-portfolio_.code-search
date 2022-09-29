@@ -1,0 +1,75 @@
+# Query: personal-portfolio/
+# ContextLines: 1
+
+26 results - 5 files
+
+package.json:
+  3    "version": "0.1.0",
+  4:   "homepage": "https://JamesNapoletano.github.io/personal-portfolio/",
+  5    "private": true,
+
+src/Components/Footer/Footer.jsx:
+  42                  <footer className={styles.links}>
+  43:                     <Link to=''>Home</Link>
+  44:                     <Link to='bio'>Bio</Link>
+  45:                     <Link to='projects'>Projects</Link>
+  46:                     <Link to='problems'>Solved Problems</Link>
+  47:                     <Link to='contact'>Contact</Link>
+  48                  </footer>
+
+src/Components/NavBar/NavBar.jsx:
+  35          <Link
+  36:             to=""
+  37              className={
+  38:                 pathname === '/' ? styles.navButtonSelected : styles.navButton
+  39              }
+
+  45          <Link
+  46:             to="bio"
+  47:             className={pathname === '/bio' ? styles.navButtonSelected : styles.navButton}
+  48          >
+
+  53          <Link
+  54:             to="projects"
+  55:             className={pathname.includes('/projects') ? styles.navButtonSelected : styles.navButton}
+  56          >
+
+  61          <Link
+  62:             to="problems"
+  63:             className={pathname.includes('/problems') ? styles.navButtonSelected : styles.navButton}
+  64          >
+
+  69          <Link
+  70:             to="contact"
+  71:             className={pathname === '/contact' ? styles.navButtonSelected : styles.navButton}
+  72          >
+
+src/Routes/Problems/Problems.jsx:
+  14          <Link
+  15:             to={pathname !== '/problems/fizzbuzz' ? 'fizzbuzz' : ''}
+  16:             className={pathname === '/problems/fizzbuzz' ? styles.probNavBtnSelected : styles.probNavBtn}
+  17          >
+
+  22          <Link
+  23:             to={pathname !== '/problems/wordpalindrome' ? 'wordpalindrome' : ''}
+  24:             className={pathname === '/problems/wordpalindrome' ? styles.probNavBtnSelected : styles.probNavBtn}
+  25          >
+
+  30          <Link
+  31:             to={pathname !== '/problems/numberpalindrome' ? 'numberpalindrome' : ''}
+  32:             className={pathname === '/problems/numberpalindrome' ? styles.probNavBtnSelected : styles.probNavBtn}
+  33          >
+
+  38          <Link
+  39:             to={pathname !== '/problems/twosum' ? 'twosum' : ''}
+  40:             className={pathname === '/problems/twosum' ? styles.probNavBtnSelected : styles.probNavBtn}
+  41          >
+
+  60              </nav>
+  61:             {pathname === '/problems' ?
+  62                  <>
+
+src/Routes/Projects/Projects.jsx:
+  56          <>
+  57:             {pathname === '/projects' ?
+  58                  <>

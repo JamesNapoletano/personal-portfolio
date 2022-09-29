@@ -1,25 +1,36 @@
 import styles from './Footer.module.css'
 import { Link, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react';
+import { useContext } from 'react';
+import { AccentColorContext } from '../../context/accent-color-context';
 
 const Footer = () => {
     const { pathname } = useLocation();
 
+    const { accentColor } = useContext(AccentColorContext)
+
     const [footerStrokeColor, setFooterStrokeColor] = useState(`${styles.footerStroke} ${styles.footerBlue}`)
 
     useEffect(() => {
-        pathname === '/personal-portfolio/' ?
-            setFooterStrokeColor(`${styles.footerStroke} ${styles.footerBlue}`) :
-            pathname.includes('/personal-portfolio/bio') ?
-                setFooterStrokeColor(`${styles.footerStroke} ${styles.footerGreen}`) :
-                pathname.includes('/personal-portfolio/projects') ?
-                    setFooterStrokeColor(`${styles.footerStroke} ${styles.footerRed}`) :
-                    pathname.includes('/personal-portfolio/problems') ?
-                        setFooterStrokeColor(`${styles.footerStroke} ${styles.footerPurple}`) :
-                        pathname.includes('/personal-portfolio/contact') ?
-                            setFooterStrokeColor(`${styles.footerStroke} ${styles.footerSteel}`) :
-                            setFooterStrokeColor(`${styles.footerStroke} ${styles.footerBlue}`)
-    }, [pathname])
+        switch (accentColor) {
+            case 'blue':
+                setFooterStrokeColor(`${styles.footerStroke} ${styles.footerBlue}`)
+                break;
+            case 'green':
+                setFooterStrokeColor(`${styles.footerStroke} ${styles.footerGreen}`)
+                break;
+            case 'red':
+                setFooterStrokeColor(`${styles.footerStroke} ${styles.footerRed}`)
+                break;
+            case 'purple':
+                setFooterStrokeColor(`${styles.footerStroke} ${styles.footerPurple}`)
+                break;
+            case 'steel':
+                setFooterStrokeColor(`${styles.footerStroke} ${styles.footerSteel}`)
+                break;
+        }
+
+    }, [accentColor])
 
     return (
 

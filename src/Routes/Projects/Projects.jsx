@@ -54,7 +54,7 @@ export default function Projects() {
 
     return (
         <>
-            {pathname.includes('/projects') ?
+            {pathname === '/projects' ?
                 <>
                     <h1>
                         Projects
@@ -87,7 +87,10 @@ export default function Projects() {
                         </div>
                     </div>
                 </> :
+                <>
+                {console.log('update')}
                 <Outlet />
+                </>
             }
         </>
     )

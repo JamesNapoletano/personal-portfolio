@@ -33,9 +33,9 @@ const NavBar = () => {
 
     const homeBtn = (
         <Link
-            to="personal-portfolio/"
+            to=""
             className={
-                pathname === '/personal-portfolio/' ? styles.navButtonSelected : styles.navButton
+                pathname === '/' ? styles.navButtonSelected : styles.navButton
             }
         >
             Home
@@ -43,32 +43,32 @@ const NavBar = () => {
     )
     const bioBtn = (
         <Link
-            to="personal-portfolio/bio"
-            className={pathname === '/personal-portfolio/bio' ? styles.navButtonSelected : styles.navButton}
+            to="bio"
+            className={pathname === '/bio' ? styles.navButtonSelected : styles.navButton}
         >
             Bio
         </Link>
     )
     const projBtn = (
         <Link
-            to="personal-portfolio/projects"
-            className={pathname.includes('/personal-portfolio/projects') ? styles.navButtonSelected : styles.navButton}
+            to="projects"
+            className={pathname.includes('/projects') ? styles.navButtonSelected : styles.navButton}
         >
             Projects
         </Link>
     )
     const probBtn = (
         <Link
-            to="personal-portfolio/problems"
-            className={pathname.includes('/personal-portfolio/problems') ? styles.navButtonSelected : styles.navButton}
+            to="problems"
+            className={pathname.includes('/problems') ? styles.navButtonSelected : styles.navButton}
         >
             Solved Problems
         </Link>
     )
     const contBtn = (
         <Link
-            to="personal-portfolio/contact"
-            className={pathname === '/personal-portfolio/contact' ? styles.navButtonSelected : styles.navButton}
+            to="contact"
+            className={pathname === '/contact' ? styles.navButtonSelected : styles.navButton}
         >
             Contact
         </Link>

@@ -12,32 +12,32 @@ export default function Problems() {
 
     const fizzBuzz = (
         <Link
-            to={pathname !== '/personal-portfolio/problems/fizzbuzz' ? 'fizzbuzz' : ''}
-            className={pathname === '/personal-portfolio/problems/fizzbuzz' ? styles.probNavBtnSelected : styles.probNavBtn}
+            to={pathname !== '/problems/fizzbuzz' ? 'fizzbuzz' : ''}
+            className={pathname === '/problems/fizzbuzz' ? styles.probNavBtnSelected : styles.probNavBtn}
         >
             FizzBuzz
         </Link>
     )
     const wordPalindrome = (
         <Link
-            to={pathname !== '/personal-portfolio/problems/wordpalindrome' ? 'wordpalindrome' : ''}
-            className={pathname === '/personal-portfolio/problems/wordpalindrome' ? styles.probNavBtnSelected : styles.probNavBtn}
+            to={pathname !== '/problems/wordpalindrome' ? 'wordpalindrome' : ''}
+            className={pathname === '/problems/wordpalindrome' ? styles.probNavBtnSelected : styles.probNavBtn}
         >
             Word Palindrome
         </Link>
     )
     const numberPalindrome = (
         <Link
-            to={pathname !== '/personal-portfolio/problems/numberpalindrome' ? 'numberpalindrome' : ''}
-            className={pathname === '/personal-portfolio/problems/numberpalindrome' ? styles.probNavBtnSelected : styles.probNavBtn}
+            to={pathname !== '/problems/numberpalindrome' ? 'numberpalindrome' : ''}
+            className={pathname === '/problems/numberpalindrome' ? styles.probNavBtnSelected : styles.probNavBtn}
         >
             Number Palindrome
         </Link>
     )
     const twoSum = (
         <Link
-            to={pathname !== '/personal-portfolio/problems/twosum' ? 'twosum' : ''}
-            className={pathname === '/personal-portfolio/problems/twosum' ? styles.probNavBtnSelected : styles.probNavBtn}
+            to={pathname !== '/problems/twosum' ? 'twosum' : ''}
+            className={pathname === '/problems/twosum' ? styles.probNavBtnSelected : styles.probNavBtn}
         >
             Two Sum
         </Link>
@@ -58,7 +58,7 @@ export default function Problems() {
                 {numberPalindrome}
                 {twoSum}
             </nav>
-            {pathname === '/personal-portfolio/problems' ?
+            {pathname === '/problems' ?
                 <>
                     <h2>
                         Solved Problems

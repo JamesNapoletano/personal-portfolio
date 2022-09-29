@@ -33,19 +33,19 @@ root.render(
             <div className='contentBase'>
               <div className='innerContent'>
                 <Routes>
-                  <Route path='personal-portfolio/' element={<App />} />
-                  <Route path='personal-portfolio/bio' element={<Bio />} />
-                  <Route path='personal-portfolio/projects' element={<Projects />}>
+                  <Route path='/' element={<App />} />
+                  <Route path='/bio' element={<Bio />} />
+                  <Route path='/projects' element={<Projects />}>
                     <Route path='nuclearreactor' element={<NuclearReactor />} />
                     <Route path='stimulationgame' element={<StimulationGame />} />
                   </Route>
-                  <Route path='personal-portfolio/problems' element={<Problems />}>
+                  <Route path='/problems' element={<Problems />}>
                     <Route path='fizzbuzz' element={<FizzBuzz />} />
                     <Route path='wordpalindrome' element={<WordPalindrome />} />
                     <Route path='numberpalindrome' element={<NumberPalindrome />} />
                     <Route path='twosum' element={<TwoSum />} />
                   </Route>
-                  <Route path='personal-portfolio/contact' element={<Contact />} />
+                  <Route path='/contact' element={<Contact />} />
                 </Routes>
               </div>
             </div>

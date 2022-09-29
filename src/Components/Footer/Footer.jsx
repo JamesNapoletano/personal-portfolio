@@ -40,11 +40,11 @@ const Footer = () => {
                     {pathname}
                 </div>
                 <footer className={styles.links}>
-                    <Link to='personal-portfolio/'>Home</Link>
-                    <Link to='personal-portfolio/bio'>Bio</Link>
-                    <Link to='personal-portfolio/projects'>Projects</Link>
-                    <Link to='personal-portfolio/problems'>Solved Problems</Link>
-                    <Link to='personal-portfolio/contact'>Contact</Link>
+                    <Link to=''>Home</Link>
+                    <Link to='bio'>Bio</Link>
+                    <Link to='projects'>Projects</Link>
+                    <Link to='problems'>Solved Problems</Link>
+                    <Link to='contact'>Contact</Link>
                 </footer>
             </div>
         </div>

@@ -54,7 +54,7 @@ export default function Projects() {
 
     return (
         <>
-            {pathname === '/personal-portfolio/projects' ?
+            {pathname === '/projects' ?
                 <>
                     <h1>
                         Projects

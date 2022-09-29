@@ -1,14 +1,6 @@
-import { useContext, useEffect } from 'react';
 import './App.css';
-import { AccentColorContext } from './context/accent-color-context';
 
 function App() {
-  const { updateAccentColor } = useContext(AccentColorContext)
-
-  useEffect(() => {
-    updateAccentColor('blue')
-  }, [])
-
   return (
     <div className="App">
       <h1>

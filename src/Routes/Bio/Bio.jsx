@@ -1,17 +1,7 @@
-import { useContext } from 'react'
-import { useEffect } from 'react'
 import UnderDevelopment from '../../Components/UnderDevelopment/UnderDevelopment'
-import { AccentColorContext } from '../../context/accent-color-context'
 import styles from './Bio.module.css'
 
-
 export default function Bio() {
-    const { updateAccentColor } = useContext(AccentColorContext);
-
-    useEffect(() => {
-        updateAccentColor('green')
-    }, [])
-
     return (
         <>
             <h1>

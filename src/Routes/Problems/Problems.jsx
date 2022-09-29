@@ -1,14 +1,11 @@
-import { useEffect } from "react";
-import { useContext } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import styles from './Problems.module.css'
-import { AccentColorContext } from '../../context/accent-color-context'
 
 
 
 export default function Problems() {
+
     const { pathname } = useLocation();
-    const { updateAccentColor } = useContext(AccentColorContext)
 
     const fizzBuzz = (
         <Link
@@ -42,10 +39,6 @@ export default function Problems() {
             Two Sum
         </Link>
     )
-
-    useEffect(() => {
-        updateAccentColor('purple')
-    }, [])
 
     return (
         <>

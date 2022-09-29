@@ -1,35 +1,25 @@
 import styles from './NavBar.module.css';
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { useContext } from 'react';
-import { AccentColorContext } from '../../context/accent-color-context';
 
 const NavBar = () => {
     const { pathname } = useLocation();
 
-    const { accentColor } = useContext(AccentColorContext)
-
     const [navStrokeColor, setNavStrokeColor] = useState(`${styles.navStroke} ${styles.navBlue}`)
 
     useEffect(() => {
-        switch (accentColor) {
-            case 'blue':
-                setNavStrokeColor(`${styles.navStroke} ${styles.navBlue}`)
-                break;
-            case 'green':
-                setNavStrokeColor(`${styles.navStroke} ${styles.navGreen}`)
-                break;
-            case 'red':
-                setNavStrokeColor(`${styles.navStroke} ${styles.navRed}`)
-                break;
-            case 'purple':
-                setNavStrokeColor(`${styles.navStroke} ${styles.navPurple}`)
-                break;
-            case 'steel':
-                setNavStrokeColor(`${styles.navStroke} ${styles.navSteel}`)
-                break;
-        }
-    }, [accentColor])
+        pathname === '/personal-portfolio/' ?
+            setNavStrokeColor(`${styles.navStroke} ${styles.navBlue}`) :
+            pathname.includes('/personal-portfolio/bio') ?
+                setNavStrokeColor(`${styles.navStroke} ${styles.navGreen}`) :
+                pathname.includes('/personal-portfolio/projects') ?
+                    setNavStrokeColor(`${styles.navStroke} ${styles.navRed}`) :
+                    pathname.includes('/personal-portfolio/problems') ?
+                        setNavStrokeColor(`${styles.navStroke} ${styles.navPurple}`) :
+                        pathname.includes('/personal-portfolio/contact') ?
+                            setNavStrokeColor(`${styles.navStroke} ${styles.navSteel}`) :
+                            setNavStrokeColor(`${styles.navStroke} ${styles.navBlue}`)
+    }, [pathname])
 
     const homeBtn = (
         <Link
@@ -52,7 +42,7 @@ const NavBar = () => {
     const projBtn = (
         <Link
             to="personal-portfolio/projects"
-            className={pathname.includes('/personal-portfolio/projects') ? styles.navButtonSelected : styles.navButton}
+            className={pathname === '/personal-portfolio/projects' ? styles.navButtonSelected : styles.navButton}
         >
             Projects
         </Link>

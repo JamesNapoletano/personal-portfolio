@@ -20,40 +20,37 @@ import WordPalindrome from './Routes/Problems/WordPalindrome/WordPalindrome';
 import NumberPalindrome from './Routes/Problems/NumberPalindrome/NumberPalindrome';
 import TwoSum from './Routes/Problems/TwoSum/TwoSum';
 import Contact from './Routes/Contact/Contact';
-import { AccentColorContextProvider } from './context/accent-color-context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AccentColorContextProvider>
-      <BrowserRouter>
-        <div className='flexColumn'>
-          <NavBar />
-          <div className='contentStroke'>
-            <div className='contentBase'>
-              <div className='innerContent'>
-                <Routes>
-                  <Route path='personal-portfolio/' element={<App />} />
-                  <Route path='personal-portfolio/bio' element={<Bio />} />
-                  <Route path='personal-portfolio/projects' element={<Projects />}>
-                    <Route path='nuclearreactor' element={<NuclearReactor />} />
-                    <Route path='stimulationgame' element={<StimulationGame />} />
-                  </Route>
-                  <Route path='personal-portfolio/problems' element={<Problems />}>
-                    <Route path='fizzbuzz' element={<FizzBuzz />} />
-                    <Route path='wordpalindrome' element={<WordPalindrome />} />
-                    <Route path='numberpalindrome' element={<NumberPalindrome />} />
-                    <Route path='twosum' element={<TwoSum />} />
-                  </Route>
-                  <Route path='personal-portfolio/contact' element={<Contact />} />
-                </Routes>
-              </div>
+    <BrowserRouter>
+      <div className='flexColumn'>
+        <NavBar />
+        <div className='contentStroke'>
+          <div className='contentBase'>
+            <div className='innerContent'>
+              <Routes>
+                <Route path='personal-portfolio/' element={<App />} />
+                <Route path='personal-portfolio/bio' element={<Bio />} />
+                <Route path='personal-portfolio/projects' element={<Projects />}>
+                  <Route path='nuclearreactor' element={<NuclearReactor />} />
+                  <Route path='stimulationgame' element={<StimulationGame />} />
+                </Route>
+                <Route path='personal-portfolio/problems' element={<Problems />}>
+                  <Route path='fizzbuzz' element={<FizzBuzz />} />
+                  <Route path='wordpalindrome' element={<WordPalindrome />} />
+                  <Route path='numberpalindrome' element={<NumberPalindrome />} />
+                  <Route path='twosum' element={<TwoSum />} />
+                </Route>
+                <Route path='personal-portfolio/contact' element={<Contact />} />
+              </Routes>
             </div>
           </div>
-          <Footer />
         </div>
-      </BrowserRouter>
-    </AccentColorContextProvider>
+        <Footer />
+      </div>
+    </BrowserRouter>
   </React.StrictMode>
 
 );

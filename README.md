@@ -1,71 +1,69 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # personal-portfolio
+
+Deployed Link: [https://jnap-personal-portfolio.netlify.app/](https://jnap-personal-portfolio.netlify.app/)
+
+This project is a basic portfolio for displaying my works with programming. It will likely remain in development for a long time, as I would like to maintain this project.
+
+## Nav Bar
+
+At the top of the site you can find a navigation bar that will change states based on the page accessed.
+this is achieved using `accent-color-context.jsx`
+
+## Home
+
+The Home page is just a simple welcoming to anybody who happens to run accross this portfolio.
+
+## Bio
+
+The Bio page is another simple display that features information about me and my life.
+**Note: This page is still under development and requires a population of content to fill the placeholders.**
+
+## Projects
+
+The Projects page displays a list of my GitHub repositories as well as a number of web games that I am currently working on.
+**Note: This page will eventually receive a `Web Apps` list.**
+
+### GitHub Repos
+
+This is a list of my GitHub repo links that is called in using axios.
+
+### Web Games
+
+#### Nuclear Reactor
+
+Nuclear Reactor is a sequence-based game that simulates the start-up and shut-down of a nuclear reactor. The game replies with messages regarding you in-game choices.
+**Note: This project is still under development. You can currently play the game until you reach stage 3.**
+
+#### Stimulation Game
+
+Stimulation Game is a puzzle-style game where you figure out the method for unlocking certain buttons. As these buttons are activated they may join into one. This can be continued until there is only a single button remaining. At this point you may win.
+**Note: This project is still under development. The buttons function but there are currently no rules added to make the game difficult.**
+
+## Problems
+
+The Problems page displays a number of code challenge problems that I have solved and adapted to React.
+**Note: More solved challenges may be added in the future.**
+
+#### FizzBuzz
+
+FizzBuzz is a sequence generator that will return all numbers up to a specified limit. All numbers that are divisible by 3 will be replaced with `Fizz` while all numbers divisible by 5 will be replaced with `Buzz.` All numbers that are divisible by both 3 and 5 will be replaced with `FizzBuzz.`
+
+#### Word Palindrome
+
+Word Palindrome will verify if a word input is spelled the same as its mirrored self. etc. Racecar
+
+#### Number Palindrome
+
+Number Palindrome will verify if a number holds the same value if its characters are reversed. etc. 121
+
+#### TwoSum
+
+TwoSum will take 2-4 check values and a target value. With these values, the function will return to you which of the two check numbers add up to the target number. If there is no solution, TwoSum will let you know.
+
+## Contact
+
+The Contact page is a simple ID card including information about myself.
+
+## Footer
+
+At the bottom of the site you will find the `Footer` component. This component follows the same styling context as the `NavBar` and also contains links to the five main pages. On the left side of the footer you will see a path name referencing your current location on my site's route.

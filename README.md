@@ -25,7 +25,7 @@ The Projects page displays a list of my GitHub repositories as well as a number 
 
 ### GitHub Repos
 
-This is a list of my GitHub repo links that is called in using axios.
+This is a list of my GitHub repo links that is called in using `axios`.
 
 ### Web Games
 
@@ -46,7 +46,7 @@ The Problems page displays a number of code challenge problems that I have solve
 
 #### FizzBuzz
 
-FizzBuzz is a sequence generator that will return all numbers up to a specified limit. All numbers that are divisible by 3 will be replaced with `Fizz` while all numbers divisible by 5 will be replaced with `Buzz.` All numbers that are divisible by both 3 and 5 will be replaced with `FizzBuzz.`
+FizzBuzz is a sequence generator that will return all numbers up to a specified limit. All numbers that are divisible by 3 will be replaced with `Fizz` while all numbers divisible by 5 will be replaced with `Buzz.` All numbers that are divisible by both 3 and 5 will be replaced with `FizzBuzz`.
 
 #### Word Palindrome
 
